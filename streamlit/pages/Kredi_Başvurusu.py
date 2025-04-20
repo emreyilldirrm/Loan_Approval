@@ -6,7 +6,7 @@ import os
 
 st.write("çalışma dizini",os.getcwd())
 dosya_yolu = os.path.join(os.getcwd(), "streamlit", "model_with_preprocessor.pkl")
-st.write("mevcut dosyalar", os.listdir(dosya_yolu))
+st.write("mevcut dosyalar", dosya_yolu)
 # 🎨 Sayfa ayarları
 st.set_page_config(
     page_title="Kredi Onay Sistemi",
