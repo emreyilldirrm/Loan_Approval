@@ -7,7 +7,7 @@ model_path = os.path.join(os.path.dirname(__file__), "..", "model_with_preproces
 model_path = os.path.abspath(model_path)
 st.write(model_path)
 
-model_path = os.path.join(os.path.dirname(__file__), "..")
+model_path = os.path.join(os.path.dirname(__file__))
 model_path = os.path.abspath(model_path)
 st.write(model_path)
 # 🎨 Sayfa ayarları
