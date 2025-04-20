@@ -1,8 +1,11 @@
 import joblib
 import pandas as pd
 import streamlit as st
+import os
 
 
+st.write("çalışma dizini",os.getcwd())
+st.write("mevcut dosyalar",os.listdir(os.getcwd()))
 # 🎨 Sayfa ayarları
 st.set_page_config(
     page_title="Kredi Onay Sistemi",
