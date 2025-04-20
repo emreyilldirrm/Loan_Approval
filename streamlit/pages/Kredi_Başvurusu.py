@@ -65,7 +65,8 @@ if submitted:
 
     # Model yükle
     model_path = os.path.join(os.path.dirname(__file__), "..", "model_with_preprocessor.pkl")
-    model = joblib.load(os.path.join(model_path))
+    model_path = os.path.abspath(model_path)  # Tam path'e çevir
+    model = joblib.load(model_path)
 
     prediction = model.predict(train_data)
 
