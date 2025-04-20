@@ -6,7 +6,7 @@ import os
 st.write(os.getcwd())
 st.write("mevcut dosyalar",os.listdir(os.getcwd()))
 current_dir = os.getcwd()
-st.write(os.path.join(current_dir),"streamlit","model_with_preprocessor.pkl")
+st.write(os.path.join(current_dir,"streamlit","model_with_preprocessor.pkl"))
 
 # 🎨 Sayfa ayarları
 st.set_page_config(
