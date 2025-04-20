@@ -3,6 +3,8 @@ import pandas as pd
 import streamlit as st
 import os
 
+st.write(os.getcwd())
+
 # 🎨 Sayfa ayarları
 st.set_page_config(
     page_title="Kredi Onay Sistemi",
