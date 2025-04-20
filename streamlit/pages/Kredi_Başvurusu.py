@@ -4,7 +4,6 @@ import streamlit as st
 import os
 from pygments.lexers import go
 
-
 # 🎨 Sayfa ayarları
 st.set_page_config(
     page_title="Kredi Onay Sistemi",
