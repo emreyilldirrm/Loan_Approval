@@ -2,7 +2,7 @@ import joblib
 import pandas as pd
 import streamlit as st
 import os
-from pygments.lexers import go
+import plotly.graph_objects as go
 
 # 🎨 Sayfa ayarları
 st.set_page_config(
