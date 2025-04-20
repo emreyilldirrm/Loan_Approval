@@ -28,6 +28,7 @@ pytz==2025.1
 referencing==0.36.2
 requests==2.32.3
 rpds-py==0.23.1
+scipy==1.15.2
 six==1.17.0
 smmap==5.0.2
 streamlit==1.43.2
@@ -38,3 +39,4 @@ typing_extensions==4.12.2
 tzdata==2025.1
 urllib3==2.3.0
 watchdog==6.0.0
+xgboost==3.0.0
