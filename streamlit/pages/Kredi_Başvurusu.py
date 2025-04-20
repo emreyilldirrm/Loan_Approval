@@ -4,7 +4,7 @@ import streamlit as st
 import os
 
 st.write(os.getcwd())
-
+st.write("mevcut dosyalar",os.listdir(os.getcwd()))
 # 🎨 Sayfa ayarları
 st.set_page_config(
     page_title="Kredi Onay Sistemi",
