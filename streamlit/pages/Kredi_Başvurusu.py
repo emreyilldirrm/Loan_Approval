@@ -4,9 +4,8 @@ import streamlit as st
 import os
 
 
-st.write("çalışma dizini",os.getcwd())
-dosya_yolu = os.path.join(os.getcwd(), "streamlit", "model_with_preprocessor.pkl")
-st.write("mevcut dosyalar", dosya_yolu)
+
+
 # 🎨 Sayfa ayarları
 st.set_page_config(
     page_title="Kredi Onay Sistemi",
@@ -68,7 +67,7 @@ if submitted:
     train_data['NEW_yıllık_ort_kredi_kullanım'] = train_data['loan_amnt'] / train_data['cb_person_cred_hist_length']
 
     # Model yükle
-    model = joblib.load("model_with_preprocessor.pkl")
+    model = joblib.load(os.path.join(os.getcwd(), "streamlit", "model_with_preprocessor.pkl"))
 
     prediction = model.predict(train_data)
 
