@@ -1,9 +1,6 @@
 import streamlit as st
 import pandas as pd
 
-import seaborn as sns
-from matplotlib import pyplot as plt
-
 
 df=pd.read_json("https://raw.githubusercontent.com/mmcloughlin/starbucks/master/locations.json")
 ulkeler=df['country'].unique()
