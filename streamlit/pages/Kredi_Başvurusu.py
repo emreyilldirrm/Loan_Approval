@@ -3,6 +3,8 @@ import pandas as pd
 import streamlit as st
 import os
 
+from pygments.lexers import go
+
 st.write(os.getcwd())
 st.write("mevcut dosyalar",os.listdir(os.getcwd()))
 current_dir = os.getcwd()
@@ -69,8 +71,7 @@ if submitted:
     train_data['NEW_yıllık_ort_kredi_kullanım'] = train_data['loan_amnt'] / train_data['cb_person_cred_hist_length']
 
     # Model yükle
-    model_path = os.path.join(os.path.dirname(__file__), "..", "model_with_preprocessor.pkl")
-    model_path = os.path.abspath(model_path)
+    model_path = os.path.join(current_dir,"streamlit","model_with_preprocessor.pkl")
     model = joblib.load(model_path)
 
     prediction = model.predict(train_data)
