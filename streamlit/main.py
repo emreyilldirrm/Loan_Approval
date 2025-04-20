@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 from io import BytesIO
 import pandas as pd
-import plotly.graph_objects as go
+
 
 st.set_page_config(
     page_title="Main",
