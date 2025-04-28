@@ -38,7 +38,7 @@ with st.form("input_form"):
         loan_int_rate = st.number_input('📈 Faiz Oranı (%)', min_value=0.0, max_value=30.0, value=11.49)
         loan_percent_income = st.number_input('💸 Gelirin Ne Kadarı Krediye Ayrılacak? (%)', min_value=1.0, max_value=100.0, value=20.0)
         cb_person_default_on_file = st.selectbox('❗ Önceki Gecikme Var mı?', ['Y', 'N'])
-        cb_person_cred_hist_length = st.number_input('📅 Kredi Geçmişi (yıl)', min_value=0, max_value=50, value=5)
+        cb_person_cred_hist_length = st.number_input('📅 Kredi Geçmişi (yıl)', min_value=1, max_value=50, value=5)
 
     submitted = st.form_submit_button("📊 Tahmin Et")
 
